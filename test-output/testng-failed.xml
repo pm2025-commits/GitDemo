@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="APIKey/usrname" value="123456"/>
+  <parameter name="URL" value="carloan.com"/>
+  <listeners>
+    <listener class-name="section16.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="personalLoan(failed)" preserve-order="true">
+    <parameter name="APIKey/usrname" value="123456"/>
+    <parameter name="URL" value="personalloan.com"/>
+    <classes>
+      <class name="section16.day4">
+        <methods>
+          <include name="bfsuite"/>
+        </methods>
+      </class> <!-- section16.day4 -->
+      <class name="section16.day1">
+        <methods>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- section16.day1 -->
+      <class name="section16.day2">
+        <methods>
+          <include name="affLast"/>
+          <include name="prerequest"/>
+          <include name="postrequest"/>
+        </methods>
+      </class> <!-- section16.day2 -->
+      <class name="section16.day3">
+        <methods>
+          <include name="afterrecovery"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforerecovery"/>
+        </methods>
+      </class> <!-- section16.day3 -->
+    </classes>
+  </test> <!-- personalLoan(failed) -->
+</suite> <!-- Failed suite [Suite] -->

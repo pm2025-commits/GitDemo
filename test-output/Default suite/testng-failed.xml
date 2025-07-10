@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="section16.day3">
+        <methods>
+          <include name="webLogicCarLoan"/>
+          <include name="mobileSignOut"/>
+          <include name="afterrecovery"/>
+          <include name="apiLogic"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforerecovery"/>
+        </methods>
+      </class> <!-- section16.day3 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
